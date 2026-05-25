@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ta+wv+$kq&4)azskh$zyin0-d)#%8ea02%q^f(&x)f(p1z=5=5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -118,6 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 ASGI_APPLICATION = 'server_chat.asgi.application'
 
